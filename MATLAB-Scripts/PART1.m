@@ -2,7 +2,7 @@
 clear; clc;
 
 % Dataset paths
-datasetBase = 'C:\Users\hk3202\workspace\Projects\SIH2026-Project\Datasets\1 APTOS 2019 Blindness Detection';
+datasetBase = fullfile('..', 'Datasets', '1 APTOS 2019 Blindness Detection');
 csvPath = fullfile(datasetBase, 'train.csv');
 sourceImgDir = fullfile(datasetBase, 'train_images');
 targetDir = fullfile(datasetBase, 'sorted_train_images');

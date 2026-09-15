@@ -4,7 +4,7 @@ clear; clc; close all;
 rng(42); % Fixed random seed for reproducibility
 
 % 1. Load image datastore from sorted folders
-dataPath = 'C:\Users\hk3202\workspace\Projects\SIH2026-Project\Datasets\1 APTOS 2019 Blindness Detection\sorted_train_images';
+dataPath = fullfile('..', 'Datasets', '1 APTOS 2019 Blindness Detection', 'sorted_train_images');
 imds = imageDatastore(dataPath, ...
     'IncludeSubfolders', true, ...
     'LabelSource', 'foldernames');
